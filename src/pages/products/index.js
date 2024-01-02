@@ -1,27 +1,24 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Navbar from "@/components/navbar";
-import AboutUs from "@/components/AboutUs";
 import Footer from "@/components/footer";
-import Quality from "@/components/QualitySection";
-import HowWeWork from "@/components/HowWeWork";
-import GetStarted from "@/components/GetStarted";
-import OurTeam from "@/components/OurTeam";
-import OurThree from "@/components/OurThree";
-import OurClient from "@/components/OurClient";
-import Achievement from "@/components/Achievement";
-import OurSkills from "@/components/OurSkills/OurSkillsTwo";
 import BubbleChat from "@/components/BubbleChat";
-import { FaArrowRight } from "react-icons/fa";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import PricingPlan from "@/components/PricingPlan";
+import Appointment from "@/components/Appointment";
+import FAQSection from "@/components/FAQSection";
+import OurService from "@/components/OurService";
+import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
+import { RiStarSFill } from "react-icons/ri";
 
-export default function CompanyPage() {
+export default function ProductPage() {
   const router = useRouter();
   return (
     <main className="w-full relative">
       <Navbar />
       <div className="h-96 w-full px-20 flex flex-col items-center bg-[#2a2f27] relative">
         <div className="h-[420px] w-calc bg-purple-700/40 absolute -bottom-10 flex flex-col items-center justify-center space-y-4">
-          <p className="text-white text-6xl">About Us</p>
+          <p className="text-white text-6xl">Our Services</p>
           <div className="w-fit flex flex-row space items-center justify-center space-x-5 text-white">
             <p
               onClick={() => router.push("/")}
@@ -30,21 +27,17 @@ export default function CompanyPage() {
               HOME
             </p>
             <FaArrowRight />
-            <p>ABOUT</p>
+            <p>SERVICES</p>
           </div>
         </div>
       </div>
-      <div className="w-full h-20 bg-white"></div>
-      <AboutUs />
-      <Achievement />
-      <OurSkills />
-      <OurThree />
-      <Quality />
-      <HowWeWork />
-      <GetStarted />
-      <OurTeam />
-      <OurClient />
       <BubbleChat />
+      <div className="w-full h-20 bg-white"></div>
+      <OurService />
+      <WhyChooseUs />
+      <PricingPlan />
+      <Appointment />
+      <FAQSection />
       <Footer />
     </main>
   );

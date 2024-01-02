@@ -1,16 +1,22 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import LangSelect from "../LangSelect";
 import { FaFacebookF, FaYoutube, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Navbar() {
   const router = useRouter();
+  const isPathActive = (path) => {
+    return router.pathname === path;
+  };
+
   return (
     <div className="w-full bg-[#2a2f27] flex flex-col text-white text-sm">
       <div className="w-full h-10 border-gray-500 border-b-[0.05rem] flex flex-row justify-between items-center px-12">
         <span>Call us : +62 3456 789 1011</span>
         <span>Open hour : Mon - Fri, 09.00 - 17.00</span>
-        <span className="flex flex-row gap-2 justify-center items-center">
+        <span className="flex flex-row gap-4 justify-center items-center">
+          <LangSelect />
           <span>Follow us :</span>
           <span className="flex flex-row gap-2">
             <FaFacebookF />
@@ -25,10 +31,38 @@ export default function Navbar() {
           FAJARJAYA
         </span>
         <ul className="flex flex-row space-x-16">
-          <li onClick={() => router.push("/")}>HOME</li>
-          <li onClick={() => router.push("/company")}>COMPANY</li>
-          <li onClick={() => router.push("/product")}>PRODUCT</li>
-          <li onClick={() => router.push("/service")}>SERVICE</li>
+          <li
+            onClick={() => router.push("/")}
+            className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
+              isPathActive("/") ? "font-bold text-[#da844a]" : ""
+            }`}
+          >
+            HOME
+          </li>
+          <li
+            onClick={() => router.push("/company")}
+            className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
+              isPathActive("/company") ? "font-bold text-[#da844a]" : ""
+            }`}
+          >
+            COMPANY
+          </li>
+          <li
+            onClick={() => router.push("/products")}
+            className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
+              isPathActive("/products") ? "font-bold text-[#da844a]" : ""
+            }`}
+          >
+            PRODUCTS
+          </li>
+          <li
+            onClick={() => router.push("/services")}
+            className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
+              isPathActive("/services") ? "font-bold text-[#da844a]" : ""
+            }`}
+          >
+            SERVICES
+          </li>
         </ul>
         <span className="flex flex-row gap-2 items-center">
           <FaPhoneAlt />

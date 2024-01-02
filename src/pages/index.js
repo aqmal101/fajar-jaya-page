@@ -10,6 +10,8 @@ import GetStarted from "@/components/GetStarted";
 import BlogNews from "@/components/BlogNews";
 import AboutUs from "@/components/AboutUs";
 import Quality from "@/components/QualitySection";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import BubbleChat from "@/components/BubbleChat";
 import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import { RiStarSFill } from "react-icons/ri";
 
@@ -17,10 +19,12 @@ export default function Home() {
   return (
     <main className="w-full ">
       <Navbar />
-      <div className="h-screen px-24 flex flex-row bg-[#2a2f27] ">
-        <div className="h-full flex w-1/2 pr-20 pl-12 flex-col justify-center items-start space-y-6">
-          <h2 className="text-[#da844a]">WELCOME TO TEXTILN</h2>
-          <h1 className="text-[60px] text-white">
+      <div className="h-screen px-12 flex justify-between flex-row bg-[#2a2f27] ">
+        <div className="h-full flex w-[35%] text-left flex-col justify-center items-start space-y-6">
+          <h2 className="text-[#da844a] font-semibold tracking-widest">
+            WELCOME TO TEXTILN
+          </h2>
+          <h1 className="text-6xl leading-relaxed text-white">
             Do Well, Live Well & Dress Really Well
           </h1>
           <p className="text-white">
@@ -37,8 +41,8 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="h-full bg-purple-800 w-1/2 relative">
-          <div className="h-24 w-52 bg-white absolute top-20 -right-10 flex flex-row p-2 justify-around items-center">
+        <div className="h-full bg-purple-800 w-1/2 relative translate-y-[40px]">
+          <div className="h-24 w-52 bg-white absolute top-20 -right-5 flex flex-row p-2 justify-around items-center">
             <FaCheckCircle className="text-5xl text-[#da844a]" />
             <span className="text-sm space-y-2">
               <span className="text-2xl">2,500 +</span>
@@ -60,13 +64,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <BubbleChat />
       <OurClient />
-      <OurService />
+      <AboutUs />
       <Quality />
+      <OurService />
       <OurSkills />
+      <WhyChooseUs />
       <OurProject />
       <HowWeWork />
-      <AboutUs />
       <BlogNews />
       <GetStarted />
       <Footer />

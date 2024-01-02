@@ -28,7 +28,7 @@ export default function OurProject() {
       <div className="grid grid-cols-3 grid-rows-2 gap-8">
         {BlogList.map((item, idx) => (
           <div
-            className="w-[375px] h-96 bg-purple-600/20 p-5 flex flex-col justify-between"
+            className="w-[375px] h-96 bg-purple-800/30 p-5 flex flex-col justify-between"
             id={idx}
           >
             <span className="w-full flex justify-end">
