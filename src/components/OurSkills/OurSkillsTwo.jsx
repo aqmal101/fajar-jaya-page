@@ -1,12 +1,3 @@
-import Image from "next/image";
-import {
-  FaFacebookF,
-  FaYoutube,
-  FaLinkedin,
-  FaPhoneAlt,
-  FaArrowRight,
-} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
@@ -18,21 +9,25 @@ export default function OurSkillsTwo() {
     { percent: 87, skill: "White Outfit" },
   ];
   return (
-    <div className="w-full h-[1000px] flex flex-row px-12 ">
-      <div className="w-[45%] bg-blue-500 translate-y-[-30px]"></div>
-      <div className="w-[55%] bg-white flex flex-col items-center text-sm px-16 py-20 space-y-20">
-        <div className="w-full flex flex-col text-left items-start space-y-6">
-          <span className="text-[#da844a] text-lg tracking-[0.3rem]">
+    <div className="w-full h-[1000px] max-sm:h-fit flex flex-row max-sm:flex-col px-12 max-sm:px-6">
+      <div className="w-[45%] max-sm:w-full bg-blue-500 max-sm:text-center translate-y-[-30px]"></div>
+      <div className="w-[55%] max-sm:w-full bg-white flex flex-col items-center text-sm px-16 max-sm:px-4 py-20 space-y-20">
+        <div className="w-full flex flex-col text-left max-sm:text-center max-sm:items-center items-start space-y-6">
+          <span className="text-[#da844a] max-sm:text-sm text-lg tracking-[0.3rem]">
             OUR SKILLS
           </span>
-          <span className="text-5xl w-full leading-tight">
+          <span className="text-5xl max-sm:text-4xl w-full leading-tight">
             Enhancing Your Inner Beauty
           </span>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-20">
+        <div className="grid grid-cols-2 grid-rows-2 gap-20 max-sm:gap-7">
           {SkillList.map((item, idx) => (
-            <div className="flex flex-col justify-center items-center text-center space-y-4">
-              <div className="w-36 h-36 flex justify-center items-center">
+            <div
+              id={item}
+              key={idx}
+              className="flex flex-col justify-center items-center text-center space-y-4"
+            >
+              <div className="w-36 h-36 max-sm:w-32 max-sm:h-32 flex justify-center items-center">
                 <CircularProgressbar
                   value={item.percent}
                   text={`${item.percent}%`}

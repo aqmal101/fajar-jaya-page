@@ -14,6 +14,7 @@ module.exports = {
       },
       width: {
         calc: "calc(100% - 100px)",
+        smcalc: "calc(100% - 40px)",
       },
     },
   },

@@ -9,31 +9,31 @@ export default function Achievement() {
     { class: "Duluxe Package", amount: "450", cardHeight: "h-[500px]" },
   ];
   return (
-    <div className="w-full h-[400px] bg-[#141414] flex flex-row px-16 py-20 items-center justify-center">
-      <div className="w-[50%] h-full flex flex-col justify-center space-y-5">
+    <div className="w-full h-[400px] max-sm:h-fit bg-[#141414] flex flex-row max-sm:flex-col px-16 py-20 max-sm:py-14 max-sm:px-7 items-center justify-center max-sm:space-y-16">
+      <div className="w-[50%] max-sm:w-full h-full flex flex-col max-sm:text-center justify-center space-y-5">
         <span className="text-base text-[#da844a] font-semibold tracking-[0.3rem]">
           ACHIEVEMENT
         </span>
-        <span className="text-5xl text-white">
+        <span className="text-5xl max-sm:text4xl max-sm:text-4xl text-white">
           Milestone That We Have Achieved
         </span>
       </div>
-      <div className="w-[50%] h-full grid grid-cols-2 grid-rows-2 gap-10">
+      <div className="w-[50%] max-sm:w-full h-full grid grid-cols-2 grid-rows-2 gap-10 max-sm:gap-5">
         <div className="w-full h-full flex flex-col text-white space-y-2 justify-center items-center">
-          <span className="text-5xl">25+</span>
-          <span className="text-white">Years Experience</span>
+          <span className="text-5xl max-sm:text-4xl">25+</span>
+          <span className="text-gray-400">Years Experience</span>
         </div>
         <div className="w-full h-full flex flex-col text-white space-y-2 justify-center items-center">
-          <span className="text-5xl">1,450+</span>
-          <span className="text-white">Textile Project</span>
+          <span className="text-5xl max-sm:text-4xl">1,450+</span>
+          <span className="text-gray-400">Textile Project</span>
         </div>
         <div className="w-full h-full flex flex-col text-white space-y-2 justify-center items-center">
-          <span className="text-5xl">87+</span>
-          <span className="text-white">Award Winnings</span>
+          <span className="text-5xl max-sm:text-4xl">87+</span>
+          <span className="text-gray-400">Award Winnings</span>
         </div>
         <div className="w-full h-full flex flex-col text-white space-y-2 justify-center items-center">
-          <span className="text-5xl">999+</span>
-          <span className="text-white">Positive Reviews</span>
+          <span className="text-5xl max-sm:text-4xl">999+</span>
+          <span className="text-gray-400">Positive Reviews</span>
         </div>
       </div>
     </div>

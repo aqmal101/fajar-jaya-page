@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -10,24 +9,26 @@ import { FaArrowRight } from "react-icons/fa";
 import { IoCheckmark } from "react-icons/io5";
 
 export default function ProductsPage() {
+  const router = useRouter();
+  const { pageId } = router.query;
+
   const ServiceList = [
     "Nullam id diam commodo",
-    "  Pellentesque sed lorem quis",
-    "  Sed vel viverra erat",
-    "  Etiam scelerisque aliquam",
-    "  Nullam id diam commodo",
-    "  Pellentesque sed lorem quis",
-    "  Sed vel viverra erat",
-    " Etiam scelerisque aliquam",
+    "Pellentesque sed lorem quis",
+    "Sed vel viverra erat",
+    "Etiam scelerisque aliquam",
+    "Nullam id diam commodo",
+    "Pellentesque sed lorem quis",
+    "Sed vel viverra erat",
+    "Etiam scelerisque aliquam",
   ];
-  const router = useRouter();
   return (
     <main className="w-full relative">
       <Navbar />
-      <div className="h-96 w-full px-20 flex flex-col items-center bg-[#2a2f27] relative">
-        <div className="h-[420px] w-calc bg-purple-700/40 absolute -bottom-10 flex flex-col items-center justify-center space-y-4">
-          <p className="text-white text-6xl">Our Products</p>
-          <div className="w-fit flex flex-row space items-center justify-center space-x-5 text-white">
+      <div className="h-96 w-full px-20 max-sm:px-6 flex flex-col items-center bg-[#2a2f27] relative">
+        <div className="h-[420px] w-calc max-sm:w-smcalc bg-purple-700/40 absolute -bottom-10 flex flex-col items-center justify-center space-y-4">
+          <p className="text-white text-6xl max-sm:text-4xl">Our Products</p>
+          <div className="w-fit flex flex-row space items-center max-sm:text-sm justify-center space-x-5 text-white">
             <p
               onClick={() => router.push("/")}
               className="hover:cursor-pointer"
@@ -35,15 +36,19 @@ export default function ProductsPage() {
               HOME
             </p>
             <FaArrowRight />
-            <p>PRODUCTS</p>
+            <p>
+              PRODUCTS <span>{pageId}</span>
+            </p>
           </div>
         </div>
       </div>
       <BubbleChat />
       <div className="w-full h-28 bg-white"></div>
-      <div className="w-full h-fit px-20 bg-white flex flex-row justify-between text-gray-600">
-        <div className="w-[67%] h-full bg-white space-y-5">
-          <h1 className="text-5xl text-black">Textile Production Service</h1>
+      <div className="w-full h-fit px-20 max-sm:px-6 bg-white flex flex-row max-sm:flex-col justify-between max-sm:space-y-8 text-gray-600">
+        <div className="w-[67%] max-sm:w-full h-full bg-white space-y-5">
+          <h1 className="text-5xl max-sm:text-4xl text-black">
+            Textile Production Service
+          </h1>
           <p>
             Integer pharetra lobortis mauris, nec feugiat felis semper ac.
             Vestibulum posuere euismod condimentum. Ut laoreet, nibh a dapibus
@@ -54,8 +59,8 @@ export default function ProductsPage() {
             dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <div className="w-full h-[270px] flex flex-row justify-between space-x-5">
-            <div className="w-1/2 h-full bg-blue-500"></div>
-            <div className="w-1/2 h-full bg-blue-500"></div>
+            <div className="w-1/2 max-sm:w-full h-full bg-blue-500"></div>
+            <div className="w-1/2 max-sm:hidden h-full bg-blue-500"></div>
           </div>
           <h1 className="text-2xl text-black">Service Overview</h1>
           <p>
@@ -75,9 +80,13 @@ export default function ProductsPage() {
             Vivamus iaculis consequat elit, semper malesuada ipsum vestibulum
             sit amet.
           </p>
-          <div className="grid grid-cols-2 grid-rows-4 gap-y-2">
-            {ServiceList.map((item, index) => (
-              <span className="flex flex-row space-x-2 items-center" id={index}>
+          <div className="grid grid-cols-2 max-sm:grid-cols-1 grid-rows-4 gap-y-2">
+            {ServiceList.map((item, idx) => (
+              <span
+                className="flex flex-row space-x-2 items-center"
+                id={item}
+                key={idx}
+              >
                 <IoCheckmark className="text-[#cf7539] text-xl" />
                 <p>{item}</p>
               </span>
@@ -90,16 +99,20 @@ export default function ProductsPage() {
             blandit mauris nulla, ac euismod sem aliquet ac. Morbi ut ipsum ut
             enim suscipit volutpat non ac sapien.
           </p>
-          <div className="grid grid-cols-2 grid-rows-4 gap-y-2">
-            {ServiceList.map((item, index) => (
-              <span className="flex flex-row space-x-2 items-center" id={index}>
+          <div className="grid grid-cols-2 max-sm:grid-cols-1 grid-rows-4 gap-y-2">
+            {ServiceList.map((item, idx) => (
+              <span
+                className="flex flex-row space-x-2 items-center"
+                id={item}
+                key={idx}
+              >
                 <IoCheckmark className="text-[#cf7539] text-xl" />
                 <p>{item}</p>
               </span>
             ))}
           </div>
         </div>
-        <div className="w-[27%] h-full bg-white space-y-5">
+        <div className="w-[27%] max-sm:w-full h-full bg-white space-y-5">
           <div className="w-full h-[300px] p-10 justify-between border border-gray-300 flex flex-col">
             <div className="w-full h-fit flex flex-row justify-start space-x-2 items-start">
               <span className="text-4xl">$39.00</span>

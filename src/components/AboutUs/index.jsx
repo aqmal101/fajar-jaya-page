@@ -6,7 +6,7 @@ import { IoMdPin } from "react-icons/io";
 export default function About() {
   return (
     <main className="w-full ">
-      <div className="h-[700px] px-16 flex flex-row-reverse justify-between items-center">
+      <div className="h-[700px] max-sm:bg-yellow-500 max-sm:hidden px-16 flex flex-row-reverse justify-between items-center">
         <div className="h-full flex w-1/2 px-16 py-20 flex-col justify-center space-y-8 bg-white">
           <h2 className="text-[#da844a] font-semibold tracking-widest text-lg">
             ABOUT US

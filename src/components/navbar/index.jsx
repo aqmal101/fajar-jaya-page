@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full bg-[#2a2f27] flex flex-col text-white text-sm">
-      <div className="w-full h-10 border-gray-500 border-b-[0.05rem] flex flex-row justify-between items-center px-12">
+      <div className="w-full max-sm:hidden h-10 border-gray-500 border-b-[0.05rem] flex flex-row justify-between items-center px-12 ">
         <span>Call us : +62 3456 789 1011</span>
         <span>Open hour : Mon - Fri, 09.00 - 17.00</span>
         <span className="flex flex-row gap-4 justify-center items-center">
@@ -26,11 +26,11 @@ export default function Navbar() {
           </span>
         </span>
       </div>
-      <div className="flex flex-row justify-between items-center px-12 py-6">
-        <span className="text-2xl hover:scale-110 ease-in-out duration-300">
+      <div className="flex flex-row justify-between items-center px-12 py-6 max-sm:px-6">
+        <span className="text-2xl max-sm:text-xl hover:scale-110 ease-in-out duration-300">
           FAJARJAYA
         </span>
-        <ul className="flex flex-row space-x-16">
+        <ul className="flex flex-row space-x-16 max-sm:hidden">
           <li
             onClick={() => router.push("/")}
             className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
@@ -66,7 +66,7 @@ export default function Navbar() {
         </ul>
         <span className="flex flex-row gap-2 items-center">
           <FaPhoneAlt />
-          LET'S TALK
+          LET`S TALK
         </span>
       </div>
     </div>

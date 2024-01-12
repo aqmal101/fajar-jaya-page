@@ -8,7 +8,7 @@ export default function PricingPlan() {
     { class: "Duluxe Package", amount: "450", cardHeight: "h-[500px]" },
   ];
   return (
-    <div className="w-full h-fit bg-[#2a2f27] flex flex-col items-center text-sm px-20 py-20 space-y-16">
+    <div className="w-full h-fit bg-[#2a2f27] flex flex-col items-center text-sm px-20 max-sm:px-6 py-20 space-y-16">
       <div className="w-full flex flex-col text-center space-y-6">
         <span className="text-[#da844a] text-lg tracking-widest">
           PRICING PLAN
@@ -17,11 +17,12 @@ export default function PricingPlan() {
           Choose Your Plan
         </span>
       </div>
-      <div className="w-full flex flex-row justify-between items-center space-x-5 ">
+      <div className="w-full flex flex-row max-sm:flex-col max-sm:space-y-7 justify-between items-center space-x-5 max-sm:space-x-0">
         {PlanList.map((item, idx) => (
           <div
-            className={`w-[340px] ${item.cardHeight} flex flex-col justify-center items-center  bg-white p-10 text-center space-y-7`}
-            id={idx}
+            className={`w-[340px] max-sm:w-full ${item.cardHeight} flex flex-col justify-center items-center  bg-white p-10 text-center space-y-7`}
+            id={item}
+            key={idx}
           >
             <p className="text-2xl">{item.class}</p>
             <p className="text-gray-500">

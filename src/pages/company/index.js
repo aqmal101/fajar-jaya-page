@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 import Navbar from "@/components/navbar";
 import AboutUs from "@/components/AboutUs";
@@ -19,10 +18,10 @@ export default function CompanyPage() {
   return (
     <main className="w-full relative">
       <Navbar />
-      <div className="h-96 w-full px-20 flex flex-col items-center bg-[#2a2f27] relative">
-        <div className="h-[420px] w-calc bg-purple-700/40 absolute -bottom-10 flex flex-col items-center justify-center space-y-4">
-          <p className="text-white text-6xl">About Us</p>
-          <div className="w-fit flex flex-row space items-center justify-center space-x-5 text-white">
+      <div className="h-96 w-full px-20 max-sm:px-6 flex flex-col items-center bg-[#2a2f27] relative">
+        <div className="h-[420px] w-calc max-sm:w-smcalc bg-purple-700/40 absolute -bottom-10 flex flex-col items-center justify-center space-y-4">
+          <p className="text-white text-6xl max-sm:text-4xl">About Us</p>
+          <div className="w-fit flex flex-row space items-center max-sm:text-sm justify-center space-x-5 text-white">
             <p
               onClick={() => router.push("/")}
               className="hover:cursor-pointer"

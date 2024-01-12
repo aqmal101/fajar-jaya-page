@@ -9,14 +9,14 @@ export default function Appointment() {
     { class: "Duluxe Package", amount: "450", cardHeight: "h-[500px]" },
   ];
   return (
-    <div className="w-full h-fit bg-white flex flex-row items-center text-sm py-20 space-y-16">
-      <div className="w-1/2 flex flex-col text-center space-y-10 px-16">
+    <div className="w-full h-fit bg-white flex flex-row max-sm:flex-col items-center text-sm py-20 space-y-16">
+      <div className="w-1/2 max-sm:w-full flex flex-col text-center space-y-10 px-16 max-sm:px-6">
         <div className="w-full flex flex-col text-left space-y-6">
           <span className="text-[#da844a] text-lg tracking-widest">
             APPOINTMENT
           </span>
           <span className="text-5xl w-[70%] leading-tight">
-            Let's Talk About Textile
+            Let`s Talk About Textile
           </span>
         </div>
         <div className="w-full  flex flex-col space-y-7">
@@ -49,8 +49,6 @@ export default function Appointment() {
           </select>
 
           <textarea
-            name=""
-            id=""
             cols="30"
             rows="10"
             className=" border border-gray-300 p-4 placeholder-gray-700"
@@ -61,7 +59,7 @@ export default function Appointment() {
           </span>
         </div>
       </div>
-      <div className="w-1/2 h-[800px] bg-purple-400 flex flex-col justify-end space-y-5 p-20 items-center">
+      <div className="w-1/2 max-sm:w-full h-[800px] max-sm:h-[600px] bg-purple-400 flex flex-col justify-end space-y-5 p-20 max-sm:p-6 items-center">
         <span className="w-full h-48 flex flex-col justify-center items-start p-5 space-y-5 border border-gray-500 hover:border-white ">
           <div className="w-10 h-10 rounded-full flex justify-center items-center text-[#da844a]">
             <PiChatsCircle size={60} />

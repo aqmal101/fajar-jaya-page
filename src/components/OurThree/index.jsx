@@ -11,7 +11,7 @@ export default function OurThree() {
   return (
     <>
       <div className="w-full h-20 bg-white"></div>
-      <div className="w-full h-fit grid grid-cols-3 grid-row-2 px-12 ">
+      <div className="w-full h-fit grid grid-cols-3 max-sm:grid-cols-1 grid-rows-2 px-12 max-sm:px-3">
         <div className="w-full h-[320px] bg-white group hover:bg-[#2a2f27] flex flex-col items-center justify-between transition-all duration-300 ease-out p-10">
           <div className="text-[#da844a] text-5xl flex justify-center items-center group-hover:translate-y-[-10px] transition-300 duration-300 ease-in-out">
             <FaRegEye />

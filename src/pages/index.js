@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import OurClient from "@/components/OurClient";
@@ -17,17 +16,17 @@ import { RiStarSFill } from "react-icons/ri";
 
 export default function Home() {
   return (
-    <main className="w-full ">
+    <main className="w-full max-sm:w-screen max-sm:bg-purple-500">
       <Navbar />
-      <div className="h-screen px-12 flex justify-between flex-row bg-[#2a2f27] ">
-        <div className="h-full flex w-[35%] text-left flex-col justify-center items-start space-y-6">
-          <h2 className="text-[#da844a] font-semibold tracking-widest">
+      <div className="h-screen px-12 max-sm:px-6 flex justify-between flex-row max-sm:w-screen max-sm:flex-col bg-[#2a2f27] ">
+        <div className="h-full max-sm:py-10 flex w-[35%] max-sm:w-full text-left flex-col justify-center items-start space-y-6">
+          <h2 className="text-[#da844a] max-sm:text-sm font-semibold tracking-widest">
             WELCOME TO TEXTILN
           </h2>
-          <h1 className="text-6xl leading-relaxed text-white">
+          <h1 className="text-6xl max-sm:text-4xl leading-relaxed text-white">
             Do Well, Live Well & Dress Really Well
           </h1>
-          <p className="text-white">
+          <p className="text-white max-sm:text-sm">
             Lorem ipsum dolor sit amet, consectetur adipi scing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
           </p>
@@ -41,15 +40,15 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="h-full bg-purple-800 w-1/2 relative translate-y-[40px]">
-          <div className="h-24 w-52 bg-white absolute top-20 -right-5 flex flex-row p-2 justify-around items-center">
+        <div className="h-full bg-purple-800 w-1/2 max-sm:w-full relative translate-y-[40px] max-sm:translate-y-5">
+          <div className="h-24 w-52 max-sm:hidden bg-white absolute top-20 -right-5 flex flex-row p-2 justify-around items-center">
             <FaCheckCircle className="text-5xl text-[#da844a]" />
             <span className="text-sm space-y-2">
               <span className="text-2xl">2,500 +</span>
               <p className="text-gray-500 text-lg">Total Project</p>
             </span>
           </div>
-          <div className="h-[74px] w-52 bg-white absolute bottom-20 -left-10 flex flex-row p-3 justify-around items-center">
+          <div className="h-[74px] max-sm:hidden w-52 bg-white absolute bottom-20 -left-10 flex flex-row p-3 justify-around items-center">
             <span className="text-5xl">4.9</span>
             <span className="text-sm space-y-2">
               <span className="flex flex-row text-yellow-500">
