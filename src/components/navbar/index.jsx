@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import LangSelect from "../LangSelect";
+import Drawer from "../drawer";
 import { FaFacebookF, FaYoutube, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -68,6 +69,10 @@ export default function Navbar() {
           <FaPhoneAlt />
           LET`S TALK
         </span>
+        {/* <button onClick={() => Drawer.toggle()} className="max-sm:hidden">
+          Drawer
+        </button> */}
+        <Drawer />
       </div>
     </div>
   );
