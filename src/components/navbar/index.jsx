@@ -65,14 +65,13 @@ export default function Navbar() {
             SERVICES
           </li>
         </ul>
-        <span className="flex flex-row gap-2 items-center">
-          <FaPhoneAlt />
-          LET`S TALK
-        </span>
-        {/* <button onClick={() => Drawer.toggle()} className="max-sm:hidden">
-          Drawer
-        </button> */}
-        <Drawer />
+        <div className="flex flex-row gap-6 items-center">
+          <div className="flex flex-row gap-2 items-center">
+            <FaPhoneAlt />
+            LET`S TALK
+          </div>
+          <Drawer />
+        </div>
       </div>
     </div>
   );
