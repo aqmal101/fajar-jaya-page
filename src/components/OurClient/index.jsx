@@ -1,16 +1,16 @@
 import Image from "next/image";
-import logo1 from "@/assets/good-well.png";
-import logo2 from "@/assets/amble.png";
-import logo3 from "@/assets/neospa.png";
-import logo4 from "@/assets/drextel.png";
-import logo5 from "@/assets/burton.png";
-import logo6 from "@/assets/mevlana.png";
-import logo7 from "@/assets/amelie.png";
-import logo8 from "@/assets/strana.png";
+import logo1 from "./good-well.png";
+import logo2 from "./amble.png";
+import logo3 from "./neospa.png";
+import logo4 from "./drextel.png";
+import logo5 from "./burton.png";
+import logo6 from "./mevlana.png";
+import logo7 from "./amelie.png";
+import logo8 from "./strana.png";
 export default function OurClient() {
   const LogoList = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
   return (
-    <div className="w-full bg-[#141414] flex flex-col justify-between space-y-10 items-center py-24 px-12">
+    <div className="w-full bg-[#231f20] flex flex-col justify-between space-y-10 items-center py-24 px-12">
       <span className="text-white tracking-widest text-lg">
         Our Biggest Client
       </span>

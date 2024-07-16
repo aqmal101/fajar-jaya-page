@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import Indo from "../../assets/id.svg";
-import Eng from "../../assets/gb.svg";
+import Indo from "./id.svg";
+import Eng from "./gb.svg";
 
 export default function LangSelect() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);

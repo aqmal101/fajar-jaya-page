@@ -17,7 +17,7 @@ export default function FAQSection() {
   return (
     <div className="w-full h-fit bg-white flex flex-col items-center text-sm px-20 max-sm:px-6 py-20 max-sm:py-12 space-y-16">
       <div className="w-full flex flex-col text-center space-y-6">
-        <span className="text-[#da844a] text-lg tracking-widest font-semibold">
+        <span className="text-[#32bab3] text-lg tracking-widest font-semibold">
           FAQS
         </span>
         <span className="text-5xl w-full leading-tight text-black">
@@ -30,7 +30,7 @@ export default function FAQSection() {
             <details
               id={item}
               key={idx}
-              className="w-full z-10 bg-white border border-gray-300 open:bg-gray-800 open:text-white duration-500 transition-all ease-in-out"
+              className="w-full bg-white border border-gray-300 open:bg-gray-800 open:text-white duration-500 transition-all ease-in-out"
             >
               <summary className="bg-inherit px-5 py-3 text-lg max-sm:text-base cursor-pointer">
                 {item}
@@ -50,7 +50,7 @@ export default function FAQSection() {
             <details
               id={item}
               key={idx}
-              className="w-full z-10 bg-white border border-gray-300 open:bg-gray-800 open:text-white duration-500 transition-all ease-in-out"
+              className="w-full bg-white border border-gray-300 open:bg-gray-800 open:text-white duration-500 transition-all ease-in-out"
             >
               <summary className="bg-inherit px-5 py-3 text-lg max-sm:text-base cursor-pointer">
                 {item}

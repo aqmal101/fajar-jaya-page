@@ -12,9 +12,9 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full bg-[#2a2f27] flex flex-col text-white text-sm">
+    <div className="w-full bg-[#15464b] flex flex-col text-white text-sm">
       <div className="w-full max-sm:hidden h-10 border-gray-500 border-b-[0.05rem] flex flex-row justify-between items-center px-12 ">
-        <span>Call us : +62 3456 789 1011</span>
+        <span>Call us : (0281) 777 1975</span>
         <span>Open hour : Mon - Fri, 09.00 - 17.00</span>
         <span className="flex flex-row gap-4 justify-center items-center">
           <LangSelect />
@@ -34,32 +34,32 @@ export default function Navbar() {
         <ul className="flex flex-row space-x-16 max-sm:hidden">
           <li
             onClick={() => router.push("/")}
-            className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
-              isPathActive("/") ? "font-bold text-[#da844a]" : ""
+            className={`hover:cursor-pointer hover:text-[#32bab3] tracking-wider ${
+              isPathActive("/") ? "font-bold text-[#32bab3]" : ""
             }`}
           >
             HOME
           </li>
           <li
             onClick={() => router.push("/company")}
-            className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
-              isPathActive("/company") ? "font-bold text-[#da844a]" : ""
+            className={`hover:cursor-pointer hover:text-[#32bab3] tracking-wider ${
+              isPathActive("/company") ? "font-bold text-[#32bab3]" : ""
             }`}
           >
             COMPANY
           </li>
           <li
             onClick={() => router.push("/products")}
-            className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
-              isPathActive("/products") ? "font-bold text-[#da844a]" : ""
+            className={`hover:cursor-pointer hover:text-[#32bab3] tracking-wider ${
+              isPathActive("/products") ? "font-bold text-[#32bab3]" : ""
             }`}
           >
             PRODUCTS
           </li>
           <li
             onClick={() => router.push("/services")}
-            className={`hover:cursor-pointer hover:text-[#da844a] tracking-wider ${
-              isPathActive("/services") ? "font-bold text-[#da844a]" : ""
+            className={`hover:cursor-pointer hover:text-[#32bab3] tracking-wider ${
+              isPathActive("/services") ? "font-bold text-[#32bab3]" : ""
             }`}
           >
             SERVICES

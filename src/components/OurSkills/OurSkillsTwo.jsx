@@ -13,7 +13,7 @@ export default function OurSkillsTwo() {
       <div className="w-[45%] max-sm:w-full bg-blue-500 max-sm:text-center translate-y-[-30px]"></div>
       <div className="w-[55%] max-sm:w-full bg-white flex flex-col items-center text-sm px-16 max-sm:px-4 py-20 space-y-20">
         <div className="w-full flex flex-col text-left max-sm:text-center max-sm:items-center items-start space-y-6">
-          <span className="text-[#da844a] max-sm:text-sm text-lg tracking-[0.3rem]">
+          <span className="text-[#32bab3] max-sm:text-sm text-lg tracking-[0.3rem]">
             OUR SKILLS
           </span>
           <span className="text-5xl max-sm:text-4xl w-full leading-tight">

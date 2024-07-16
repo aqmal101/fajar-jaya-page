@@ -9,9 +9,9 @@ export default function Achievement() {
     { class: "Duluxe Package", amount: "450", cardHeight: "h-[500px]" },
   ];
   return (
-    <div className="w-full h-[400px] max-sm:h-fit bg-[#141414] flex flex-row max-sm:flex-col px-16 py-20 max-sm:py-14 max-sm:px-7 items-center justify-center max-sm:space-y-16">
+    <div className="w-full h-[400px] max-sm:h-fit bg-[#231f20] flex flex-row max-sm:flex-col px-16 py-20 max-sm:py-14 max-sm:px-7 items-center justify-center max-sm:space-y-16">
       <div className="w-[50%] max-sm:w-full h-full flex flex-col max-sm:text-center justify-center space-y-5">
-        <span className="text-base text-[#da844a] font-semibold tracking-[0.3rem]">
+        <span className="text-base text-[#32bab3] font-semibold tracking-[0.3rem]">
           ACHIEVEMENT
         </span>
         <span className="text-5xl max-sm:text4xl max-sm:text-4xl text-white">

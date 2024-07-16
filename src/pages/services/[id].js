@@ -24,7 +24,7 @@ export default function ServicePage() {
   return (
     <main className="w-full relative">
       <Navbar />
-      <div className="h-96 w-full px-20 max-sm:px-6 flex flex-col items-center bg-[#2a2f27] relative">
+      <div className="h-96 w-full px-20 max-sm:px-6 flex flex-col items-center bg-[#15464b] relative">
         <div className="h-[420px] w-calc max-sm:w-smcalc bg-purple-700/40 absolute -bottom-10 flex flex-col items-center justify-center space-y-4">
           <p className="text-white text-6xl max-sm:text-4xl">Our Services</p>
           <div className="w-fit flex flex-row space items-center max-sm:text-sm justify-center space-x-5 text-white">
@@ -115,7 +115,7 @@ export default function ServicePage() {
           <div className="w-full h-[300px] p-10 justify-between border border-gray-300 flex flex-col">
             <div className="w-full h-fit flex flex-row justify-start space-x-2 items-start">
               <span className="text-4xl">$39.00</span>
-              <span className="text-sm text-[#da844a]">/SERVICE</span>
+              <span className="text-sm text-[#32bab3]">/SERVICE</span>
             </div>
             <span className="text-gray-500">
               Donec ac finibus massa, in commodo erat. Cras tristique eros elit.

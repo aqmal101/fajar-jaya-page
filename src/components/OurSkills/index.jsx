@@ -18,9 +18,9 @@ export default function OurSkills() {
     { id: 4, percent: 87, skill: "White Outfit" },
   ];
   return (
-    <div className="w-full bg-[#2a2f27] flex flex-col items-center text-sm px-20 max-sm:px-10 max-sm:py-16 py-28 space-y-14">
+    <div className="w-full bg-[#15464b] flex flex-col items-center text-sm px-20 max-sm:px-10 max-sm:py-16 py-28 space-y-14">
       <div className="w-full items-center flex flex-col text-center space-y-6">
-        <p className="text-[#da844a] text-lg tracking-widest">OUR SKILLS</p>
+        <p className="text-[#32bab3] text-lg tracking-widest">OUR SKILLS</p>
         <span className="text-5xl max-sm:text-4xl w-full leading-tight text-white">
           Enhancing Your Inner Beauty
         </span>

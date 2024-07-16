@@ -20,7 +20,7 @@ export default function OurProject() {
   return (
     <div className="w-full bg-white flex flex-col items-center text-sm px-20 max-sm:px-6 max-sm:py-10 py-28 space-y-14">
       <div className="w-full items-center flex flex-col text-center space-y-6">
-        <p className="text-[#da844a] text-lg tracking-widest">OUR PROJECT</p>
+        <p className="text-[#32bab3] text-lg tracking-widest">OUR PRODUCTS</p>
         <span className="text-5xl max-sm:text-4xl w-full leading-tight">
           Clothes for Your Best Moments
         </span>
@@ -28,12 +28,12 @@ export default function OurProject() {
       <div className="grid max-sm:w-full grid-cols-3 grid-rows-2 gap-8 max-sm:gap-2 max-sm:grid-cols-1">
         {BlogList.map((item, idx) => (
           <div
-            className="w-[375px] max-sm:w-full max-sm:h-56 h-96 bg-purple-800/30 p-5 max-sm:p-4 flex flex-col justify-between"
+            className="w-[375px] max-sm:w-full max-sm:h-56 h-96 bg-[#231f20]/30 p-5 max-sm:p-4 flex flex-col justify-between"
             id={idx}
             key={item.id}
           >
             <span className="w-full flex justify-end">
-              <span className="uppercase w-fit py-1 max-sm:text-[10px] px-3 bg-white text-[#da844a]">
+              <span className="uppercase w-fit py-1 max-sm:text-[10px] px-3 bg-white text-[#32bab3]">
                 {item.tag}
               </span>
             </span>
@@ -42,7 +42,7 @@ export default function OurProject() {
               <p className="text-base max-sm:hidden">
                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
               </p>
-              <span className="flex flex-row space-x-3 items-center text-[14px] max-sm:text-xs text-[#da844a] hover:text-white hover:cursor-pointer transition-all duration-300 ease-in-out">
+              <span className="flex flex-row space-x-3 items-center text-[14px] max-sm:text-xs text-[#32bab3] hover:text-white hover:cursor-pointer transition-all duration-300 ease-in-out">
                 <p>READ MORE</p>
                 <FaArrowRight />
               </span>

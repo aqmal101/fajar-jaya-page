@@ -10,7 +10,7 @@ export default function Footer() {
     { id: 4, icon: <FaXTwitter /> },
   ];
   return (
-    <div className="w-full max-sm:h-fit bg-[#141414] flex flex-col-reverse text-white text-sm px-12 max-sm:px-7">
+    <div className="w-full max-sm:h-fit bg-[#231f20] flex flex-col-reverse text-white text-sm px-12 max-sm:px-7">
       <div className="w-full h-16 max-sm:h-20 max-sm:space-y-4 max-sm:py-2 border-gray-500 border-t-[0.05rem] flex flex-row justify-between items-center max-sm:flex-col-reverse">
         <span>Copyright © 2023 Fajar Jaya</span>
         <span className="flex flex-row gap-5 justify-center items-center">
@@ -28,7 +28,7 @@ export default function Footer() {
           <span className="flex flex-row gap-6 max-sm:gap-4">
             {LogoList.map((item, idx) => (
               <span
-                className="flex flex-row p-2 rounded-full border-[1px] border-gray-400 hover:border-white hover:bg-white hover:text-[#da844a] hover:cursor-pointer"
+                className="flex flex-row p-2 rounded-full border-[1px] border-gray-400 hover:border-white hover:bg-white hover:text-[#32bab3] hover:cursor-pointer"
                 id={item.id}
                 key={idx}
               >
@@ -41,13 +41,13 @@ export default function Footer() {
           <div className="flex flex-col space-y-5">
             <span className="flex flex-col space-y-5">
               <span className="text-2xl">Visit Us</span>
-              <span className="w-[70%]">457 Morningview Lane, New York</span>
+              <span className="w-[70%]">Jl. K.S. Tubun No.4, Purwokerto </span>
               <span>07.00 AM - 19.00 PM</span>
             </span>
             <span className="space-y-5">
               <p className="text-2xl">Contact Us</p>
-              <p>+1 (234) 567 890</p>
-              <p>example@mail.com</p>
+              <p>+(0281) 777 1975</p>
+              <p>cvfajarjaya@gmail.com</p>
             </span>
           </div>
           <div className="flex flex-col space-y-3">
